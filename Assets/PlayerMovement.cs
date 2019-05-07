@@ -59,21 +59,6 @@ public class PlayerMovement : MonoBehaviour {
 
     void MouseClick()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            if(this.gameObject.transform.childCount == 0)
-            {
-                RaycastHit2D hit;
-                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-            }
-
-            //Physics2D.Raycast(ray, out hit)
-            if (this.gameObject.transform.childCount != 0)
-            {
-
-            }
-        }
         if (Input.GetMouseButtonDown(1) || Input.GetMouseButtonDown(0))
         {
             mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
