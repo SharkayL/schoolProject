@@ -25,6 +25,16 @@ public class Fruit : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        
 	}
+
+    public void ScheduleEating()
+    {
+        Invoke("Destroy", 3);
+    }
+
+    void Destroy()
+    {
+        Destroy(this.gameObject);
+    }
 }

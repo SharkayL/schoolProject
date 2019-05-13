@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RejectionRadius
-{
+public class CheckBunny {
 
     Vector2 point;
     float radius;
 
-    public RejectionRadius(Vector2 point,float radius)
+
+    public CheckBunny(Vector2 point, float radius)
     {
         this.point = point;
         this.radius = radius;
